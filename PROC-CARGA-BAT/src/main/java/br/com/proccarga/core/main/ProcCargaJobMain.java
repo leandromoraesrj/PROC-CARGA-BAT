@@ -16,6 +16,9 @@ import br.com.proccarga.sn.business.ProcessamentoArquivoPeriodoBusiness;
 /**
  * Classe principal da aplicação
  * 
+ * Mode de uso: java -jar ./PROC-CARGA-BAT-1.0.0.jar local teste
+ * OBS:a pasta confirma tem que estar no mesmo local do .JAR
+ *
  * @author Leandro Moraes
  */
 public final class ProcCargaJobMain {
