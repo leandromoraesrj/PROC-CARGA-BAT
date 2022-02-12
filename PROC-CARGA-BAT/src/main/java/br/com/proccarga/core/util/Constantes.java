@@ -35,7 +35,7 @@ public final class Constantes {
 	/**
 	 * Quantidade de parâmetros exigidos para a execução da aplicação
 	 */
-	public static final int QTDE_PARAMETROS_MINIMA = 1;
+	public static final int QTDE_PARAMETROS_MINIMA = 2;
 
 	/**
 	 * Diretório com os arquivos de configuração (properties) da aplicação

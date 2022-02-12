@@ -16,8 +16,8 @@ import br.com.proccarga.sn.business.ProcessamentoArquivoPeriodoBusiness;
 /**
  * Classe principal da aplicação
  * 
- * Mode de uso: java -jar ./PROC-CARGA-BAT-1.0.0.jar local teste
- * OBS:a pasta confirma tem que estar no mesmo local do .JAR
+ * Mode de uso: java -jar PROC-CARGA-BAT-1.0.0.jar local uniqueinstancia
+ * OBS:a pasta config tem que estar no mesmo local do .JAR
  *
  * @author Leandro Moraes
  */
@@ -52,7 +52,8 @@ public final class ProcCargaJobMain {
 			ambienteExecucao = args[0];
 			identificadorInstancia = args[1];
 
-			PropertyConfigurator.configure("config/" + ambienteExecucao + "/log4j.properties");
+			PropertyConfigurator.configure(Constantes.DIRETORIO_CONFIGURACAO + ambienteExecucao +
+					"/log4j.properties");
 
 			LOGGER.info(Constantes.BATCH_SEPARADOR_LOG);
 			LOGGER.info("INICIANDO O JOB");

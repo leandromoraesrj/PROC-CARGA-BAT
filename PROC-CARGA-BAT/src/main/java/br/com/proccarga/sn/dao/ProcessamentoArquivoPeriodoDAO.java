@@ -233,7 +233,7 @@ public class ProcessamentoArquivoPeriodoDAO extends ConexaoJDBC {
 	}
 
 	public boolean conectar() {
-		return super.conectar(BancoDeDadosEnum.SINCAD);
+		return super.conectar(BancoDeDadosEnum.CARGA);
 	}
 
 	/**

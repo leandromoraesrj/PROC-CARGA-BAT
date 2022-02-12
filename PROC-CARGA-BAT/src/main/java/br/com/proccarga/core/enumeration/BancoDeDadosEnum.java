@@ -7,66 +7,31 @@ package br.com.proccarga.core.enumeration;
  */
 public enum BancoDeDadosEnum {
 
-	/**
-	 * Banco de dados Oracle com acesso ao schema
-	 * 
-	 * @author Leandro Moraes
-	 */
-	SINCAD {
+	CARGA {
 
-		/*
-		 * (non-Javadoc)
-		 * 
-		 * @see
-		 * br.gov.rj.sef.sincad.core.enumeration.BancoDeDadosEnum#getServidor()
-		 */
 		@Override
 		public String getServidor() {
-			return PropriedadesEnum.BANCO_DE_DADOS_SINCAD_SERVIDOR.get();
+			return PropriedadesEnum.BANCO_DE_DADOS_SERVIDOR.get();
 		}
 
-		/*
-		 * (non-Javadoc)
-		 * 
-		 * @see
-		 * br.gov.rj.sef.sincad.core.enumeration.BancoDeDadosEnum#getPorta()
-		 */
 		@Override
 		public String getPorta() {
-			return PropriedadesEnum.BANCO_DE_DADOS_SINCAD_PORTA.get();
+			return PropriedadesEnum.BANCO_DE_DADOS_PORTA.get();
 		}
 
-		/*
-		 * (non-Javadoc)
-		 * 
-		 * @see
-		 * br.gov.rj.sef.sincad.core.enumeration.BancoDeDadosEnum#getServico()
-		 */
 		@Override
 		public String getServico() {
-			return PropriedadesEnum.BANCO_DE_DADOS_SINCAD_SERVICO.get();
+			return PropriedadesEnum.BANCO_DE_DADOS_SERVICO.get();
 		}
 
-		/*
-		 * (non-Javadoc)
-		 * 
-		 * @see
-		 * br.gov.rj.sef.sincad.core.enumeration.BancoDeDadosEnum#getUsuario()
-		 */
 		@Override
 		public String getUsuario() {
-			return PropriedadesEnum.BANCO_DE_DADOS_SINCAD_USUARIO.get();
+			return PropriedadesEnum.BANCO_DE_DADOS_USUARIO.get();
 		}
 
-		/*
-		 * (non-Javadoc)
-		 * 
-		 * @see
-		 * br.gov.rj.sef.sincad.core.enumeration.BancoDeDadosEnum#getSenha()
-		 */
 		@Override
 		public String getSenha() {
-			return PropriedadesEnum.BANCO_DE_DADOS_SINCAD_SENHA.get();
+			return PropriedadesEnum.BANCO_DE_DADOS_SENHA.get();
 		}
 	};
 

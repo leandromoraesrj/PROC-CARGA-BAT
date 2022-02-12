@@ -9,11 +9,11 @@ import br.com.proccarga.core.util.PropriedadesUtil;
  */
 public enum PropriedadesEnum {
 
-  BANCO_DE_DADOS_SINCAD_SERVIDOR("bancodedados.proccarga.servidor"),
-  BANCO_DE_DADOS_SINCAD_PORTA("bancodedados.proccarga.porta"),
-  BANCO_DE_DADOS_SINCAD_SERVICO("bancodedados.proccarga.servico"),
-  BANCO_DE_DADOS_SINCAD_USUARIO("bancodedados.proccarga.usuario"),
-  BANCO_DE_DADOS_SINCAD_SENHA("bancodedados.proccarga.senha"),
+  BANCO_DE_DADOS_SERVIDOR("bancodedados.servidor"),
+  BANCO_DE_DADOS_PORTA("bancodedados.porta"),
+  BANCO_DE_DADOS_SERVICO("bancodedados.servico"),
+  BANCO_DE_DADOS_USUARIO("bancodedados.usuario"),
+  BANCO_DE_DADOS_SENHA("bancodedados.senha"),
    
   EMAIL_SMTP_ENDERECO("email.smtp.endereco"),
   EMAIL_SMTP_PORTA("email.smtp.porta"),
