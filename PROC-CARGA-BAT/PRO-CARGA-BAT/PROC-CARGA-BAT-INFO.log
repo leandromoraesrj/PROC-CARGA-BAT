@@ -1,0 +1,55 @@
+ INFO 12 fev 12:10:20 [daebae72-7d66-4879-b049-f3c074ba3e5d] br.com.proccarga.core.main.ProcCargaJobMain - ------------------------------------------------------------------
+ INFO 12 fev 12:10:20 [daebae72-7d66-4879-b049-f3c074ba3e5d] br.com.proccarga.core.main.ProcCargaJobMain - SUPERINTENDÊNCIA DE TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÃO - SUTIC
+ INFO 12 fev 12:10:20 [daebae72-7d66-4879-b049-f3c074ba3e5d] br.com.proccarga.core.main.ProcCargaJobMain - ------------------------------------------------------------------
+ INFO 12 fev 12:10:20 [daebae72-7d66-4879-b049-f3c074ba3e5d] br.com.proccarga.core.main.ProcCargaJobMain - INICIANDO O JOB
+ INFO 12 fev 12:10:20 [daebae72-7d66-4879-b049-f3c074ba3e5d] br.com.proccarga.core.main.ProcCargaJobMain - ------------------------------------------------------------------
+ INFO 12 fev 12:10:20 [daebae72-7d66-4879-b049-f3c074ba3e5d] br.com.proccarga.core.util.ValidacaoUtil - NAO EXISTE INSTANCIA EM EXECUCAO PARA ESSA TAREFA
+ INFO 12 fev 12:10:20 [daebae72-7d66-4879-b049-f3c074ba3e5d] br.com.proccarga.core.main.ProcCargaJobMain - ------------------------------------------------------------------
+ INFO 12 fev 12:10:20 [daebae72-7d66-4879-b049-f3c074ba3e5d] br.com.proccarga.core.jdbc.ConexaoJDBC - CONECTANDO AO RECURSO: jdbc:oracle:thin:@1.1.1.0:1521/nomebanco
+ INFO 12 fev 12:10:20 [daebae72-7d66-4879-b049-f3c074ba3e5d] br.com.proccarga.core.jdbc.ConexaoJDBC - ------------------------------------------------------------------
+ WARN 12 fev 12:10:41 [daebae72-7d66-4879-b049-f3c074ba3e5d] br.com.proccarga.core.jdbc.ConexaoJDBC - NAO FOI POSSIVEL INICIAR A CONEXAO COM O BANCO DE DADOS
+java.sql.SQLRecoverableException: Erro de ES: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:458)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:546)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:236)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at br.com.proccarga.core.jdbc.ConexaoJDBC.conectar(ConexaoJDBC.java:37)
+	at br.com.proccarga.sn.dao.ProcessamentoArquivoPeriodoDAO.conectar(ProcessamentoArquivoPeriodoDAO.java:236)
+	at br.com.proccarga.sn.business.ProcessamentoArquivoPeriodoBusiness.iniciaProcessamentoSN(ProcessamentoArquivoPeriodoBusiness.java:24)
+	at br.com.proccarga.core.main.ProcCargaJobMain.main(ProcCargaJobMain.java:66)
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:392)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:434)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:687)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:247)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1102)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:320)
+	... 10 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:150)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:370)
+	... 15 more
+ INFO 12 fev 12:10:41 [daebae72-7d66-4879-b049-f3c074ba3e5d] br.com.proccarga.core.jdbc.ConexaoJDBC - ------------------------------------------------------------------
+ INFO 12 fev 12:10:41 [daebae72-7d66-4879-b049-f3c074ba3e5d] br.com.proccarga.sn.business.ProcessamentoArquivoPeriodoBusiness - Fim da importação dos arquivos SNMEI
+ INFO 12 fev 12:10:41 [daebae72-7d66-4879-b049-f3c074ba3e5d] br.com.proccarga.core.main.ProcCargaJobMain - ------------------------------------------------------------------
+ INFO 12 fev 12:10:41 [daebae72-7d66-4879-b049-f3c074ba3e5d] br.com.proccarga.core.main.ProcCargaJobMain - JOB EXECUTADO - TEMPO DE EXECUCAO: 0 H, 0 MIN, 21 S, 278 MS
+ INFO 12 fev 12:10:41 [daebae72-7d66-4879-b049-f3c074ba3e5d] br.com.proccarga.core.main.ProcCargaJobMain - ------------------------------------------------------------------
+ INFO 12 fev 12:11:53 [313690be-b2e5-468c-82b5-bfd53a0a069b] br.com.proccarga.core.main.ProcCargaJobMain - ------------------------------------------------------------------
+ INFO 12 fev 12:11:53 [313690be-b2e5-468c-82b5-bfd53a0a069b] br.com.proccarga.core.main.ProcCargaJobMain - INICIANDO O JOB
+ INFO 12 fev 12:11:53 [313690be-b2e5-468c-82b5-bfd53a0a069b] br.com.proccarga.core.main.ProcCargaJobMain - ------------------------------------------------------------------
+ INFO 12 fev 12:11:53 [313690be-b2e5-468c-82b5-bfd53a0a069b] br.com.proccarga.core.util.ValidacaoUtil - NAO EXISTE INSTANCIA EM EXECUCAO PARA ESSA TAREFA
+ INFO 12 fev 12:11:53 [313690be-b2e5-468c-82b5-bfd53a0a069b] br.com.proccarga.core.main.ProcCargaJobMain - ------------------------------------------------------------------
+ INFO 12 fev 12:11:53 [313690be-b2e5-468c-82b5-bfd53a0a069b] br.com.proccarga.core.jdbc.ConexaoJDBC - CONECTANDO AO RECURSO: jdbc:oracle:thin:@1.1.1.0:1521/nomebanco
+ INFO 12 fev 12:11:53 [313690be-b2e5-468c-82b5-bfd53a0a069b] br.com.proccarga.core.jdbc.ConexaoJDBC - ------------------------------------------------------------------

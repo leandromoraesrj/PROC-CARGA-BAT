@@ -1,0 +1,5 @@
+.project
+.settings/
+sincad-ejb/.classpath
+sincad-ejb/.settings/
+sincad-ejb/target/
